@@ -1,0 +1,59 @@
+<!--导航栏下面大图-->
+<image src="/assets/imgs/testi_bg.jpg" class="testi-bg"/>
+<text>\n</text>
+<!-- 公司介绍 -->
+<view class="company_body"id="company_body">
+<ul class="company_body_right">
+  <!-- 公司介绍 -->
+  <li id="body_right1">
+    <view class="body_right_top">公司介绍<p>ABOUT WEIFENG</p></view><br />
+    <view class="body_right_image">
+      <image src="/assets/imgs/company.jpg" />
+    </view>
+    <view id="body_right1_span">
+      <view>佛山市微风科技有限公司是一家实力雄厚、发展潜力巨大的物联网科技的高新技术企业。
+主要<text>经营业务</text>有工控电子产品的自研、零售、批发；电子元件及组件制造；半导体分立器件制造；集成电路设计与制造。</view><view>公司有<text>多项专利和知识产权</text>，并具有自研的物联网实时操作系统。 
+专家团队有10年的工控电子行业经验，致力于为客户提供可靠、安全、高效的工控电子产品。公司主要成员参与国家重点研发计划“物联网与智慧城市关键技术及示范”重点专项的研发。</view>
+    </view>
+  </li>
+  <text>\n</text>
+  <!-- 企业文化 -->
+  <li id="body_right2">
+    <view class="body_right_top">企业文化<p>COMPANY-CULTUR</p></view><br />
+    <view class="body_right2_text">
+      <view><text>经营宗旨：</text>专注于生产优秀的工控物联网产品。</view> 
+      <view><text>核心价值：</text>正直、诚信、务实。</view>  
+      <view><text>企业愿景：</text>推动物联网产业的发展，做一个受社会尊敬的科技企业。</view>  
+      <view><text>人才理念：</text>创建一个开放、公平的平台，让每一位员工在各自岗位上实现最大的潜能。</view> 
+      <view class="text_left"><text>产品理念：</text></view>
+      <view class="text_margin">
+        <view>从底层关注产品体验；</view>
+        <view>研发稳定高效，经济可靠的物联网产品；</view>
+        <view>坚持精品路线，实现产品价值最大化，从而实现企业利益最大化。</view>
+      </view>
+    </view>
+  </li>
+</ul>
+</view><br />
+<!-- 换行 -->
+<text>\n</text>
+
+
+<!-- 联系我们 -->
+<view class="contect_title">联系我们</view>
+<view class="contact_info">CONTACT US</view>
+<view class="contact_info"><b>佛山市微风科技有限公司</b></view>
+<view class="contact_info">地址： 佛山市南海区桂城街道金科路6号粤港金融科技园1座11楼18室</view>
+<view class="contact_info">电话：18100214480</view>
+<text>\n</text>
+<!-- 地图 -->
+<view class="page-section page-section-gap">
+    <map id="myMap"style="width: 100%; height: 500rpx; border: 2px solid #dddddd;"latitude="{{latitude}}"longitude="{{longitude}}"
+    markers="{{markers}}"covers="{{covers}}"show-location></map>
+</view>
+
+
+
+
+
+

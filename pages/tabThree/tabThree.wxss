@@ -1,0 +1,198 @@
+/* pages/tabThree/tabThree.wxss */
+.system_intro{
+	width: 90%;
+	margin: auto;
+	height: auto;
+	text-align: center;
+  margin-top: 20rpx;
+}
+.system_intro p{
+	color: #2980B9;
+	margin-bottom: 20rpx;
+  font-size:35rpx;
+}
+.system_intro span{
+	font-size: 29rpx;
+}
+
+#system_text{
+	width: 85%;
+	height: auto;
+	position: relative;
+	left: 7.5%;
+	display:inline-block;
+	margin-bottom: 10rpx;
+}
+#system_text_1{
+	height: 100%;
+	float: left;
+	margin-right: 10rpx;
+  width: 100%;
+	margin-bottom:30rpx;
+}
+#system_text_2{
+	width: 100%;
+	margin-bottom: 30rpx;
+	height: 100%;
+	float: left;
+	margin-right: 10rpx;
+}
+#system_text_3{
+	width: 100%;
+	margin-bottom: 30rpx;
+	height: 100%;
+	float: left;
+  margin-right: 10rpx;
+}
+.system_text_all{
+	height: 50rpx;
+	line-height: 50rpx;
+}
+.system_text span{
+	display: inline-block;
+}
+.system_line{
+	width: 100%;
+	height: 5rpx;
+	background-color: #2980B9;
+	font-size: 0;
+	box-shadow:1rpx 1rpx 3rpx #666;
+  margin-bottom: 10rpx;
+}
+/*公司介绍的title疑问*/
+.system_title{
+	font-family: sans-serif;
+  font-weight: 600;
+  font-size: 28rpx;
+}
+.system_title span{
+	color: #2980B9;
+}
+/*字体*/
+.font{
+	color: #5B5B5B;
+  font-size: 25rpx;
+	line-height: 38rpx;
+}
+.font view{
+  line-height: 38rpx;
+}
+.system_block{
+	width: 50%;
+	height: 820rpx;
+	float: left;
+	color: #E8E8E8;
+	padding: 3.33vw 3%;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	overflow: hidden;
+}
+.system_block strong{
+	font-size: 32rpx;
+  font-weight: bolder;
+}
+.system_block span{
+	font-size: 25rpx;
+	line-height: 40rpx;
+  margin-top:25rpx;
+  display: block;
+}
+.block_one{
+	background-color: #43ab92;
+}
+.block_two{
+	background-color: #27496d;
+}
+.block_three{
+	background-color: #ff5151;
+}
+.block_four{
+	background-color: #0c7b93;
+}
+.system_block_image{
+	width: 250rpx;
+	height: 250rpx;
+	float: right;
+	bottom: 0;
+	position: relative;
+	opacity: 0.3;
+}
+
+/*操作系统*/
+.System_div{
+	width: 100%;
+	height: 160rpx;
+	background-color: #F7F7F7;
+	text-align: center;
+	display: flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+}
+.System_div p,.System_div div{
+	display: flex;
+	justify-content:center;
+}
+.System_div strong{
+  font-size: 30rpx;
+}
+.System_div p:last-of-type{
+	color: #8B8B7A;
+	font-size: 27rpx;
+	font-family: 'times new roman';
+}
+.System_div p:fist-of-type{
+	font-size: 27rpx;
+}
+.System_div_under p{
+	font-size: 27rpx;
+}
+.System_div_line{
+	width: 4%;
+	height: 5rpx;
+	background-color: #2980B9;
+	font-size: 0;
+}
+.System_div_under{
+	width: 100%;
+	height: 70rpx;
+	background-color: #545454;
+	text-align: center;
+	line-height: 70rpx;
+	color: white;
+}
+
+/*操作系统介绍*/
+.System_img{
+	float: left;
+	text-align: center;
+  width: 100%;
+  margin-bottom: 10rpx;
+  height: 470rpx;
+}
+#System_image{
+	/*图片等比例缩放*/
+	width: 80%;
+	height: 400rpx;
+}
+.System_info{
+	height: 100%;
+	float: left;
+	margin-left: 5%;
+  width: 90%;
+  margin-bottom: 20rpx;
+}
+.System_info view{
+  font-size: 26rpx;
+	line-height: 38rpx;
+  color: #5B5B5B;
+  text-indent: 2em;
+}
+.System_info view:first-of-type{
+	font-size: 30rpx;
+  margin-bottom: 20rpx;
+  font-weight: 600;
+}
+

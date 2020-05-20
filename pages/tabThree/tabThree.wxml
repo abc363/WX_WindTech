@@ -1,0 +1,82 @@
+  <view class="system_intro">
+			<p>面向物联网设备</p>
+      <text>\n</text>
+			<span>RME 是一个支持很多高级功能的系统内核. <text>\n</text>这个系统支持许多其他系统如 FreeRTOS 、 RT-Thread 、 VxWorks 和 Linux 等不支持的复杂高级功能，在多核方面则具备和 Linux 一样极佳的可扩展性。在使用时，无需了解系统的方方面面，仅需要使用我们提供好的移植甚至二进制即可。</span>
+		</view>
+    <text>\n</text>
+		<!--三个title介绍-->
+		<view id="system_text">
+			<view id="system_text_1">
+				<view class="system_text_all">
+					<strong class="system_title" ><span>权能</span>是什么？</strong>
+        </view>
+				<view class="system_line"></view>
+				<view class="font">权能是一种最早在多用户计算机系统中引入的用来控制访问权限的凭证。它是一种不可伪造的用来唯一标识某种资源以及允许对该资源所进行的操作的的凭证。比如，Unix的文件描述符就是一种权能；Windows的访问权限也是一种权能。从某种意义上讲，权能就是一个指向某种资源的胖指针。我们使用如下三条原则来保证系统的安全性：</view>
+				<view class="font"><view>（1）权能它是不可伪造的和不可在用户态经擅自修改的；</view>
+					<view>（2）进程只能用良好定义的授权接口获取权能；</view>
+					<view>（3）权能只会被给予那些系统设计时负责管理该资源的进程。</view></view>
+			</view>
+			<view id="system_text_2">
+				<view class="system_text_all">
+					<strong class="system_title">我们为什么需要<span>基于权能的系统</span>？</strong></view>
+				<view  class="system_line"></view><br />
+				<p class="font">
+					使用权能来进行权限控制是个很老的点子了。几千年以前，皇帝和国王们制作一种特别的符文，用来授予他们的将军调兵遣将的能力。通常而言，这些符文包含了不可复制的（或者极其难以复制的）文字，上面规定了哪一支或哪一种部队可以被调动。这样，皇帝就能把管理军队的任务安全地交给将军。同样地，基于权能的操作系统能够极为巧妙地提供非常细粒度的权限管理。系统中的所有权限都由权能管理，这样就可以由用户级程序来定义具体的系统策略，因此比传统的Unix系统的灵活性要好得多。其他的好处还包括强化的安全边界，彻底的错误隔离和容易进行形式化分析。
+				</p>
+			</view>
+			<view id="system_text_3">
+				<view class="system_text_all">
+					<strong class="system_title">微内核设计不会<span>拖累</span>执行效率吗？</strong></view>
+				<view class="system_line"></view><br />
+				<p class="font">
+					简而言之： 不会 。<br/>详细解释：如果系统 被设计的很好，并且使用方法也正确 的话（尤其指通信机制），微内核设计实际上有助于在多个方面 提高系统的效率 ，因为那些经常被访问的路径现在相当于被特别地大大优化了。实际上，在某些架构上，RME的线程切换效率和中断响应速度比RT-Linux能够快出整整40倍。当用户态库的时间消耗也被计算在内时，结果仍然比RT-Linux好整整25倍。
+				</p>
+			</view>
+		</view>
+		<!--四个颜色介绍-->
+		<view class="system_block block_one">
+			<p><strong>灵活性（ F</strong></p>
+			<p><strong>LEXIBILITY）</strong></p><text>\n</text>
+			<span>Core 意味着系统可以适应于多种应用场景， 并在运行于多种架构情况下充分发挥各 种架构的潜力， 同时又使用尽量多的通用部分。 为此， RME 在设计时考虑到了从微控制器到超级计算机 在内的一系列可能平台， 并遵循了严格的编码兼容性规范来适应各种可能的编译环境</span>
+			<image src="/assets/imgs/system_lap.png"class="system_block_image"/>
+		</view>
+		<view class="system_block block_two">
+			<p><strong>安全性（ </strong></p>
+			<p><strong>SECURITY）</strong></p><text>\n</text>
+			<span>意味着系统中各类资源的受控的保密性 ， 完整性 和可用性 。 为了达到上述三点要求， RME将权能作为系统的根基。 这意味着， 在系统中， 一切都是由权能控制和管理的； 如果要对内核对象进行操作， 那么必 须通过系统调用， 传入相应的权能进行操作。 在用户态， 不同的内核对象管理器管理不同类别的权能， 因此它们的耦合性很低， 相互之间的隔离程度也因此较高</span>
+		</view>
+		<view class="system_block block_three">
+			<p><strong>可靠性（ </strong></p>
+			<p><strong>RELIABILITY）</strong></p><text>\n</text>
+			<span>意味着系统中很少或没有功能性错误， 并在此类错误发生时能够进行子系统 的微重启（ Micro-reboot） 。 作为微内核， RME 先天比宏内核来得可靠； 为尽量减少错误的发生， RME 的架构无关部分代码都经过全分支覆盖的白盒测试</span>
+			<!-- <img src="/assets/imgs/system_zan.png"class="system_block_image"/> -->
+		</view>
+		<view class="system_block block_four">
+			<p><strong>实时性（ REAL-</strong></p><text>\n</text>
+			<p><strong>TIME</strong></p><text>\n</text>
+			<p><strong>RESPONSIVENESS）</strong></p><text>\n</text>
+			<span>意味着系统中所有的执行路径都是有确定时限约束的， 并且 这些时限都是较短而不至造成问题的。 RME 在设计时考虑到了所有执行路径的可预测性， 即使在多核环 境下也能维持自身的硬实时性</span>
+			<!-- <img src="/assets/imgs/system_clock.png"class="system_block_image"/> -->
+		</view>
+		<!--突越·中生·真核-->
+		<view class="System_div">
+			<p>突越·中生·真核</p>
+			<p>Mutatus·Mesozoa·Eukaron</p>
+			<view class="System_div_line"></view>
+		</view>
+		<view class="System_div_under">
+			<p>CPU热插拔+内存热插拔+隔离内核</p>
+		</view><text>\n</text>
+		<!--图片介绍-->
+		<view class="System_img">
+			<image src="/assets/imgs/System.jpg"id="System_image"/>
+		</view>
+    <!-- 图片信息 -->
+		<view class="System_info">
+			<view>RME 采取的是微内核设计</view>
+			<view>一方面宏内核无需频繁跨保护域的优势在现代架构上已经很不明显， 另一方面微内核由于代码和数据的局部性极佳且内部结构简单而在缓存性能和并发性能上取得了决定性 的优势，使得宏内核丧失了其唯一的优点——速度。</view>
+			<view> 新近开发的以 seL4为代表的一批微内核操作系统 在进程间通信上可以好出 Linux 几十倍， 其最坏响应时间视配置而定则要好出甚至更多。 </view>
+      <view>在应用程序性 能上， 基于微内核的网络功能虚拟化（ Network Function Virtualization， NFV） 应用也取得了普遍高 出 Linux 一个数量级的性能， 彻底否决了宏内核一定具有高性能的论断。 就 RME 本身而言，在某些单核架构上的平均进程间通信性能是 Linux 的 40 倍； 即便加上用户态 库造成的开销， 比 Linux 也要快出 25 倍。</view>
+		</view>
+	
+	

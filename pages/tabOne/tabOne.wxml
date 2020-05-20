@@ -1,0 +1,119 @@
+ <!--轮播图  -->
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000"circular="true">  
+  <block wx:for="{{movies}}" wx:for-index="index" wx:key="key" >  
+    <swiper-item>  
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+    </swiper-item>  
+  </block>  
+</swiper> 
+ <!--换行  -->
+<text>\n</text>
+
+<!-- 公司介绍 -->
+<view id="body_text">
+<!-- 左边 -->
+  <view id="body_text_1">
+    <view id="body_text_1_title_div">
+      <strong class="title" >佛山市微风科技有限公司<span class="title_span">INTRODUCE</span></strong>
+    </view>
+    <view class="body_text_1_line"></view>
+    <span class="font" id="body_text_intro">
+    佛山市微风科技有限公司是一家实力雄厚、发展潜力巨大的物联网科技的高新技术企业。<br/>
+主要经营业务有工控电子产品的自研、零售、批发；电子元件及组件制造；半导体分立器件制造；集成电路设计与制造。公司有多项专利和知识产权，并具有自研的物联网实时操作系统。 
+专家团队有10年的工控电子行业经验，致力于为客户提供可靠、安全、高效的工控电子产品。公司主要成员参与国家重点研发计划“物联网与智慧城市关键技术及示范”重点专项的研发。
+    </span>
+    <a class="font"><strong id="learn_more">了解更多>></strong></a>
+    <text>\n</text>
+    <!-- 两个图标 -->
+    <ul>
+      <li class="body_text_inline-list">
+        <view class="body_text_front"title="10年的工控电子行业经验、自研的物联网实时操作系统、专项多利和知识产权……">
+          <image src="/assets/imgs/good.png"class="front_image"/>
+          <span>研发实力</span>
+        </view>
+      </li>
+      <li class="body_text_inline-list">
+        <view class="body_text_front"title="物联网应用与安全领域的专业博士团队">
+          <image src="/assets/imgs/team.png" class="back_image"/>
+          <p>专业团队</p>
+        </view>
+      </li>
+    </ul>
+  </view>
+</view>
+<!-- 换行 -->
+<text>\n</text>
+
+<!-- 核心业务 -->
+<view id="Core_Business_all">
+  <view class="Core_Business">
+    <view class="Core_text">
+      <span class="Core_text_title">核心与业务</span><i>CORE BUSINESS</i>
+    </view>
+    <view class="Core_body">
+      <!--左边业务-->
+      <view class="Core_left">
+        <view class="core_left_div">
+          <image src="/assets/imgs/core_left.jpg"class="core_left_img" />
+        </view><br />
+        <view class="core_left_text_div">
+          <view class="Core_title">工控电子产品的自研、零售、批发</view>
+          <view>主营以专用集成电路为核心的MODBUS-485继电器模块、工业延时模块、传感器模组以及可编程网关模组。系列产品经济可靠、准确度高，具有极高的性价比。</view>
+        </view>
+      </view>
+      <!-- 右边业务 -->
+      <view class="Core_right">
+        <!--右上业务-->
+        <view class="Core_right_top">
+          <view class="Core_right_top_div">
+            <image src="/assets/imgs/core_right_top.jpg" />
+          </view>
+          <view class="Core_right_top_text_div">
+            <view class="Core_title">半导体分立器件制造</view>
+            <view >各类应用场景的集成电路设计与生产、PCB设计方案提供。以尽量简单的设计，实现更多的功能。</view>
+          </view>
+        </view>
+        <!-- 右下业务 -->
+        <view class="Core_right_bottom">
+          <view class="Core_right_bottom_left">
+            <view class="Core_title">物联网实时操作系统</view>
+            <view>RME是一个支持很多高级功能的系统内核。这个系统支持许多其他系统不支持的复杂高级功能，在多核方面则具备极佳的可扩展性。</view>
+          </view>
+          <view class="right">
+            <image src="/assets/imgs/core_right_bottom.jpg" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="Business_word">
+  <view class="Business_word_top">微风，打造专业科技产品</view>
+  <view class="Business_word_bottom">“我们的产品，你们放心。”</view>
+</view>	
+<!-- 换行 -->
+<text>\n</text>
+
+<!-- 产品与服务 -->
+<view class="product_title">产品与服务</view>
+<view class="product_p">微风科技为您提供多种灵活的物联网方案服务</view>
+<view class="product_p">适用于各大行业的应用场景</view>
+
+		<view class="logo_div">
+			<view class="logo_body" wx:for="{{products}}" wx:for-index="index" wx:key="key" >
+				<view class="logo_intro" >
+					<image src="{{item.url}}"class="logo_image" />	
+				</view>
+			</view>
+			<view class="product_intro">
+				<view class="product_intro_list" wx:for="{{products}}" wx:for-index="index" wx:key="key" >
+					<view class="product_little">{{item.title}}</view>
+					<view class="product_line"></view>
+					<view class="product_intro_text"wx:for="{{item.info}}" wx:for-index="index" wx:key="key">
+            {{item}}<text>\n</text>
+          </view>
+				</view>
+			</view>
+		</view>
+
+

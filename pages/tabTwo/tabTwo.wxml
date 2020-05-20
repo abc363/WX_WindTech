@@ -1,0 +1,25 @@
+<!-- 悬浮按钮 -->
+<view class="actionBar"bindtap="menuShow">分类</view>
+<!-- 选择器 -->
+<view class="product_menu"hidden="{{menu_hidden}}">
+ <view class="product_menu_item" bindtap="selectProductAll">全部</view>
+  <view class="product_menu_item"wx:for="{{types}}"wx:for-index="index" wx:key="key" bindtap="selectProduct"data-type="{{item}}">
+  {{item}}</view>
+</view>
+<text>\n</text>
+
+<!-- 产品展示 -->
+<view class="product_list_right">
+  <view id="product_list_right_body">
+    <ul>
+      <li class="li" wx:for="{{product}}"wx:for-index="index" wx:key="key">
+        <image src="{{item.pro_img}}"class="product_list_image"/>
+        <view class="product_right">
+          <p>{{item.pro_Name}}</p><text>\n</text>
+          <p class="product_info_div">{{item.pro_info}}</p>
+          <view class="product_num">库存：{{item.pro_Num}}</view>
+        </view>
+      </li>
+    </ul>
+  </view>
+</view>

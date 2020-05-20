@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/tabOne/tabOne",
+    "pages/tabTwo/tabTwo",
+    "pages/tabThree/tabThree",
+    "pages/tabFour/tabFour"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微风科技",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#2980B9",
+    "backgroundColorTop": "#2980B9",
+    "backgroundColorBottom": "#2980B9"
+  },
+  "tabBar": {
+    "selectedColor": "#2980B9",
+    "list": [
+      {
+        "pagePath": "pages/tabOne/tabOne",
+        "text": "首页",
+        "iconPath": "assets/imgs/tabone.png",
+        "selectedIconPath": "assets/imgs/tabone_select.png"
+      },
+      {
+        "pagePath": "pages/tabTwo/tabTwo",
+        "text": "产品中心",
+        "iconPath": "assets/imgs/tabtwo.png",
+        "selectedIconPath": "assets/imgs/tabtwo_select.png"
+      },
+      {
+        "pagePath": "pages/tabThree/tabThree",
+        "text": "操作系统",
+        "iconPath": "assets/imgs/tabthree.png",
+        "selectedIconPath": "assets/imgs/tabthree_select.png"
+      },
+      {
+        "pagePath": "pages/tabFour/tabFour",
+        "text": "关于微风",
+        "iconPath": "assets/imgs/tabfour.png",
+        "selectedIconPath": "assets/imgs/tabfour_select.png"
+      }
+
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
